@@ -1,0 +1,48 @@
+CAPITOLO 2 
+
+Elementi HTML di base 
+
+ 
+
+<!DOCTYPE> 
+
+La <!DOCTYPE html>dichiarazione definisce che questo documento è un documento HTML5,  
+
+Tutti i documenti HTML devono iniziare con questa dichiarazione.  
+
+Esso rappresenta il tipo di documento e aiuta i browser a visualizzare correttamente le pagine web 
+
+non fa distinzione tra maiuscole e minuscole.  
+
+La dichiarazione si deve apparire solo una volta, nella parte superiore della pagina (prima di qualsiasi tag HTML).  
+
+<!DOCTYPE html> è la dichiarazione per HTML5. 
+
+Intestazioni HTML 
+
+Le intestazioni HTML sono definite con i tag <h1>to <h6>. 
+
+<h1>definisce l'intestazione più importante. <h6>definisce l'intestazione meno importante:  
+
+Esempio 
+
+ 
+
+<h1>Titolo</h1> 
+<h2>SottoTitolo</h2> 
+<h3>Altri Titoli</h3>						<h4>Altri Titoli</h4> 
+<h5>Altri Titoli</h5> 
+<h6>Altri Titoli</h6> 
+
+Paragrafi <p>(paragrafo)</p> 
+
+I paragrafi HTML sono definiti con il <p>tag: 
+
+Esempio 
+
+<p>This is a paragraph.</p> 
+<p>This is another paragraph.</p> 
+
+Nota: scrivendo il testo in piu paragrafi (<p></p>) il testo avra lo spazio in mezzo, 
+
+ 

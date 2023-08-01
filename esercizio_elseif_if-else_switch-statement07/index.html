@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            width: 200px;
+
+        }
+        li{
+            list-style: none;
+        }
+        input{
+            margin: 10px 0;
+        }
+        p{
+            margin-left:10px;
+        }
+        .cont{
+            display: grid;
+            grid-template-columns: repeat(4,2fr);
+            grid-template-rows: repeat(2,2fr);
+        }
+        h3{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: burlywood;
+            margin-left:30px;
+        }
+        .const{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: rgb(152, 135, 222);
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        span{
+            background-color: beige;
+            border-radius: 50px;
+            margin: 5px;
+            box-shadow: 2px 2px 2px 2px #00000150;
+        }
+        .invia{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: rgb(152, 135, 222);
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        label{
+            background-color:rgb(72, 255, 0);
+            border: 1px solid white;
+            width: 65px;
+            box-shadow: 2px 2px 2px 2px #00000150 ;
+            padding: 3px;
+        }
+        p{
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <h1>Condizionali</h1>
+    <div class="cont">
+    <span><h3>elseif</h3>
+    <form method="post" action="elseif.php">
+        <input class="invia" type="submit" value="Verifica">
+    </form></span>
+
+    <span><h3>if else</h3>
+    <form method="post" action="if-else.php">
+        <input class="invia" type="submit" value="Verifica">
+    </form></span>
+
+    <span><h3>if annidati</h3>
+        <form method="post" action="if_annidati.php">
+            <p>vedi se il tuo numero è: pari o dispari</p>
+            <input type="number" name="number" id="number">
+            <input class="const" type="submit"   value="Verifica">
+        </form></span>
+    
+
+    <span><h3>else</h3>
+        <form method="post" action="else.php">
+            <input class="const" type="submit"  value="Verifica">
+        </form></span>
+
+    <span><h3>switch statement</h3>
+    <form method="post" action="switch_statement.php">
+        <input type="number" name="number" id="number">
+        <input type="text" name="text" id="text">
+        <input type="color" name="color" id="color">
+        <input class="const" type="submit"   value="Verifica">
+    </form></span>
+
+    <span><h3>operatore di comparazione</h3>
+        <form method="post" action="operatori_di_comparazione.php">
+            <p>operatori di comparazione</p>
+            <ul>
+                <li>Minore: <</li>
+                <li>Uguale: =</li>
+                <li>Maggiore: ></li>
+                <li>MinoreUguale: <=</li>
+                <li>Uguale da: ==</li>
+                <li>MaggioreUguale: =></li>
+                <li>Diverso da: !=</li>
+                <li>Uguale come: ===</li>
+                <li>Diverso come: !==</li>
+            </ul>
+            <input class="const" type="submit"   value="Verifica">
+        </form></span>
+
+    <span><h3>operatore logico AND(&&)</h3>
+            <form method="post" action="operatore_logico_AND.php">
+                <input type="number" name="number" id="number">
+                <input class="const" type="submit"   value="Verifica">
+            </form></span>
+
+    <span><h3>operatore logico OR(||)</h3>
+        <form method="post" action="operatore_logico_OR.php">
+            <input type="number" name="number" id="number">
+            <input class="const" type="submit"   value="Verifica">
+        </form></span>
+
+    <span><h3>operatore logico NOT(!)</h3>
+        <form method="post" action="operatore_logico_NOT.php">
+             <input class="const" type="submit"   value="Verifica">
+        </form></span>
+
+    <span><h3>If Dentro il file HTML</h3>
+        <form method="post" action="if_dentro_HTML.php">
+             <input class="const" type="submit"   value="Verifica">
+        </form></span>
+
+</div>
+</body>
+</html>

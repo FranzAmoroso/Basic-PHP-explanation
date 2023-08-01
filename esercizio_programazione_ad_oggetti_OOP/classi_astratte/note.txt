@@ -1,0 +1,7 @@
+<h1>Regole Override</h1>
+                        
+                        <ul>
+                            <li>Stesso nome</li>
+                            <li>uguali o minori registrazioni di acesso</li>
+                            <li>stessi argomenti minimi</li>
+                        </ul>

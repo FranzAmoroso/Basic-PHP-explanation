@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavorare con le stringhe</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            width: 200px;
+
+        }
+        input{
+            margin: 10px 0;
+        }
+        .cont{
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+            grid-template-rows: repeat(2,2fr);
+        }
+        h3{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: burlywood;
+            margin-left:30px;
+        }
+        .const{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: rgb(152, 135, 222);
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        span{
+            background-color: beige;
+            border-radius: 50px;
+            margin: 5px;
+            box-shadow: 2px 2px 2px 2px #00000150;
+        }
+        .invia{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: rgb(152, 135, 222);
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        label{
+            background-color:rgb(72, 255, 0);
+            border: 1px solid white;
+            width: 65px;
+            box-shadow: 2px 2px 2px 2px #00000150 ;
+            padding: 3px;
+        }
+        p{
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+   <span><h3>Come concatenare le stringhe</h3>
+    <form method="post" action="concatenare_le_stringhe.php">
+        <ul>
+            <li>lorem ipsum 01</li>
+            <li>luca</li>
+            <li>lorem ipsum 02</li>
+            <li>Amoroso</li>
+            <li>D'italia</li>
+            <li>Franz</li>
+        </ul>
+        <input class="invia" type="submit" value="Concatenare le stringhe">
+    </form></span>
+
+    <span><h3>Vedere la lunghezza di una stringa</h3>
+    <form method="post" action="lunghezza_stringa.php">
+        <p>Questa è una stringa</p>
+        <input class="invia" type="submit" value="vedere la lunghezza della stringa">
+    </form></span>
+
+    <span><h3>Cambiare una stringa in maiuscolo</h3>
+    <form method="post" action="stringa_maiuscola.php">
+    <p>lorem ipsum 01</p>
+        <input class="invia" type="submit" value="Stringa in Maiuscolo">
+    </form></span>
+
+    <span><h3>Cambiare una stringa in minuscolo</h3>
+    <form method="post" action="stringa_minuscolo.php">
+    <p>LOREM IPSUM 01</p>
+        <input class="const" type="submit"  value="Stringa in minuscolo">
+    </form></span>
+
+    <span><h3>Rimuovere gli spazi bianchi all'inizio e alla fine di una stringa nella console</h3>
+    <form method="post" action="rimuove spazi bianchi alla fine e all'inizio di una stringa.php">
+        <input class="const" type="submit"   value="Rimuovi Spazi">
+    </form></span>
+    <span><h3>vedere quante le parole contiene una stringa</h3>
+        <form method="post" action="contare_parole_di_una_stringa.php">
+            <p>Questa essere una stringa</p>
+            <input class="const" type="submit"   value="Conta le parole">
+        </form></span>
+        <span><h3>Rovesciare una stringa</h3>
+            <form method="post" action="rovesciare_una_stringa.php">
+                <p>Questa essere una stringa</p>
+                <input class="const" type="submit"   value="rovescia la stringa">
+            </form></span>
+            <span><h3>Trovare la posizione di dove inizia una parola in una stringa</h3>
+                <form method="post" action="cercare_una_posizione_di_una_stringa.php">
+                    <p>Questa è una PaRoLa</p>
+                    <input class="const" type="submit"   value="Trova Posizione">
+                </form></span>
+                <span><h3>prendere una parte di una stringa</h3>
+                    <form method="post" action="prendere_una_parte_di_una_stringa.php">
+                        <p>Questa è una stringa con un inizio e una fine</p>
+                        <input class="const" type="submit"   value="Pendi Parte">
+                    </form></span>
+                    <span><h3>sostituire una parte di una stringa</h3>
+                        <form method="post" action="sostituire_parte_di_una_stringa.php">
+                            <p>Lorem Ipsum Atem Dolor ipsum, conctenur disfalturem</p>
+                            <input class="const" type="submit"   value="sostituisci Parte">
+                        </form></span>
+
+</div>
+</body>
+</html>

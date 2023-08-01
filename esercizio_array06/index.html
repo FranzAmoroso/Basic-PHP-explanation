@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            width: 200px;
+
+        }
+        li{
+            list-style: none;
+        }
+        input{
+            margin: 10px 0;
+        }
+        p{
+            margin-left:10px;
+        }
+        .cont{
+            display: grid;
+            grid-template-columns: repeat(4,2fr);
+            grid-template-rows: repeat(2,2fr);
+        }
+        h3{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: burlywood;
+            margin-left:30px;
+        }
+        .const{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: rgb(152, 135, 222);
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        span{
+            background-color: beige;
+            border-radius: 50px;
+            margin: 5px;
+            box-shadow: 2px 2px 2px 2px #00000150;
+        }
+        .invia{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: rgb(152, 135, 222);
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        label{
+            background-color:rgb(72, 255, 0);
+            border: 1px solid white;
+            width: 65px;
+            box-shadow: 2px 2px 2px 2px #00000150 ;
+            padding: 3px;
+        }
+        p{
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+    <span><h3>cos'è un array</h3>
+    <form method="post" action="verifica_numero_intero.php">
+        <input class="invia" type="submit" value="Verifica">
+    </form></span>
+
+    <span><h3>Come creare un Array</h3>
+    <form method="post" action="Come_creare_un_array.php">
+        <input class="invia" type="submit" value="Array semplice">
+    </form></span>
+
+    <span><h3>Come modificare un array</h3>
+    <form method="post" action="come_modificare_un_array.php">
+        <input class="const" type="submit"  value="Modifica">
+    </form></span>
+
+    <span><h3>loop di un array for($i=0, $i < count($enna), $i++){}</h3>
+        <p>mostra tutte le provincie</p>
+        <ul>
+            <li>troina</li>
+            <li>cerami</li>
+            <li>nicosia</li>
+        </ul>
+    <form method="post" action="loop_di_un_array.php">
+        <input class="const" type="submit"   value="Avvia contatore">
+    </form></span>
+
+    <span><h3>Come creare un Array associativo</h3>
+        <form method="post" action="come_creare_un_array_associativo.php">
+            <input class="const" type="submit"   value="Array Associativo">
+    </form></span>
+
+    <span><h3>Loop Array Associativo foreach($persona as $chiave => $valore){}</h3>
+        <form method="post" action="loop_array_associativo.php">
+            <input class="const" type="submit"   value="Avvia contatore di un Array associativo">
+    </form></span>
+
+    <span><h3>Array Multidimenzionale</h3>
+        <form method="post" action="array_multidimenzionale.php">
+            <input class="const" type="submit"   value="Array Multidimenzionale">
+    </form></span>
+
+    <span><h3>Loop di un Array Multidimensionale</h3>
+        <form method="post" action="loop_array_multidimenzionale.php">
+            <input class="const" type="submit"   value="Avvia contatore di un Array Multinazionale">
+    </form></span>
+
+    <span><h3>Ordinare in modo crescente l'interno di un Array semplice</h3>
+        <form method="post" action="ordininare-un_array_crescente.php">
+            <input class="const" type="submit"   value="Ordinare in modo crescente">
+    </form></span>
+
+    <span><h3>Ordinare in modo decrescente l'interno di un Array semplice</h3>
+        <form method="post" action="ordinare_un_array_in_modo_decrescente.php">
+            <input class="const" type="submit"   value="Ordinare in modo decrescente">
+    </form></span>
+
+    <span><h3>ordinare in modo crescente un Array Associativo per chiave</h3>
+        <form method="post" action="ordinare_un_array_associativo_per_chiave.php">
+            <input class="const" type="submit"   value="ordinare in modo crescente">
+    </form></span>
+
+    <span><h3>ordinare in modo crescente un Array Associativo per valore</h3>
+        <form method="post" action="ordinare_un_array_associativo_per_valore.php">
+            <input class="const" type="submit"   value="ordina in modo crescente">
+    </form></span>
+
+    <span><h3>Ordinare in modo decrescente un Array Associativo per chiave</h3>
+        <form method="post" action="ordinare_decrescente_un_array_associativo_per_chiave.php">
+            <input class="const" type="submit"   value="Ordinare in modo decrescente">
+    </form></span>
+
+    <span><h3>Ordinare in modo decrescente un Array Associativo per valore</h3>
+        <form method="post" action="ordinare_decrescente_un_array_Associativo_per_valore.php">
+            <input class="const" type="submit"   value="Ordinare in modo decrescente">
+    </form></span>
+
+    <span><h3>Aggiungere all'inizio di un oggetto di un array un valore</h3>
+        <form method="post" action="aggiungere_un_oggetto_all'inizio_di_un_array.php">
+            <input class="const" type="submit"   value="Aggiungi">
+    </form></span>
+
+    <span><h3>togliere all'inizio di un oggetto di un array un valore</h3>
+        <form method="post" action="togliere_all'inizio_un_oggetto_in_un_array.php">
+            <input class="const" type="submit"   value="Elimina">
+    </form></span>
+
+    <span><h3>Aggiungere all'ultimo di un oggetto di un array un valore</h3>
+        <form method="post" action="aggiungere_all'ultimo_un_oggetto_in_un_array.php">
+            <input class="const" type="submit"   value="Aggiungi">
+    </form></span>
+
+    <span><h3>Togliere all'ultimo di un oggetto di un array un valore</h3>
+        <form method="post" action="togliere_l'ultimo_oggetto_di_un_array.php">
+            <input class="const" type="submit"   value="Elimina">
+    </form></span>
+</div>
+</body>
+</html>

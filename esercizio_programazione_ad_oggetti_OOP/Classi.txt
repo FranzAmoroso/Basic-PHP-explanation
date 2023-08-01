@@ -1,0 +1,48 @@
+Possiamo usare le classi come stampino per creare altre classi come persona1 
+oppure classi più complicati come le sottoclassi insegnante e studente
+
+public: si può accedere a proprietà e metodi da ovunque(default)
+protected: si può accedere a proprietà e metodi solo dalla classe e classi figlie
+private: si può accedere a proprietà e metodi solo dalla classe
+
+
+
+
+
+//Classe
+persona
+-nome
+-cognome
+-età
+-interessi
+-saluta(ciao sono nome)
+
+persona1
+-nome Franz
+-cognome Rossi
+-eta 22
+-interessi calcio basket
+saluta(ciao sono Franz)
+
+
+
+//sottoclassi
+insegnante
+persona_dati
+
+-materia
+-saluta(buongiorno sono nome cognome e insegnante materia)
+
+insegnante1
+anna
+amoroso
+35
+filosofia
+1-$arg
+buongiorno sono anna amoroso e insegnante di filosofia
+
+studente
+persona_dati
+
+-sezione
+-saluta(bella sono nome)

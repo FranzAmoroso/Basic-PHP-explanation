@@ -1,0 +1,14 @@
+<h1>Le interfaccie</h1>
+
+
+<p>Le interfacce ci metono a disposizione dei metodi 
+che noi possiamo implementare 
+dentro le delle classi e dei metodi.</p>
+
+ <h3>Differenze tra le classi astratte e interfacce</h3>
+                <ul>
+                    <li>Interfacce non hanno proprietà</li>
+                    <li>I metodi delle interfacce devono essere tutti publici</li>
+                    <li>Tutti i metodi delle interfacce sono astratti quindi non serve la parola abstract</li>
+                    <li>delle classi possono estendere altri classi e implementari delle interfacce allo stesso tempo</li>
+                </ul>

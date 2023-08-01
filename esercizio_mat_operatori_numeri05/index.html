@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercitazioni Numeri, Operatori, Matematica</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            width: 200px;
+
+        }
+        li{
+            list-style: none;
+        }
+        input{
+            margin: 10px 0;
+        }
+        p{
+            margin-left:10px;
+        }
+        .cont{
+            display: grid;
+            grid-template-columns: repeat(4,2fr);
+            grid-template-rows: repeat(2,2fr);
+        }
+        h3{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: burlywood;
+            margin-left:30px;
+        }
+        .const{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: rgb(152, 135, 222);
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        span{
+            background-color: beige;
+            border-radius: 50px;
+            margin: 5px;
+            box-shadow: 2px 2px 2px 2px #00000150;
+        }
+        .invia{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: rgb(152, 135, 222);
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        label{
+            background-color:rgb(72, 255, 0);
+            border: 1px solid white;
+            width: 65px;
+            box-shadow: 2px 2px 2px 2px #00000150 ;
+            padding: 3px;
+        }
+        p{
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+    <span><h3> Verifica se ($operatore1 = 3;) è numero intero (true o false(boolean))</h3>
+    <form method="post" action="verifica_numero_intero.php">
+        <input class="invia" type="submit" value="Verifica">
+    </form></span>
+
+    <span><h3>Verifica se ($operatore3 = '10';) è una stringa (true o false(boolean))</h3>
+    <form method="post" action="verifica_numero_stringa.php">
+        <input class="invia" type="submit" value="Verifica">
+    </form></span>
+
+    <span><h3>Verifica se ($operatore2 = 3.5;) è float (true o false(boolean))</h3>
+    <form method="post" action="verifica_numero_float.php">
+        <input class="const" type="submit"  value="Verifica">
+    </form></span>
+
+    <span><h3>Addizione Semplice tra ($op1 = 3; + $op2 = '10';)</h3>
+        <p>operatori</p>
+        <ul>
+            <li>+</li>
+            <li>-</li>
+            <li>*</li>
+            <li>/</li>
+        </ul>
+    <form method="post" action="Addizione_semplice.php">
+        <input class="const" type="submit"   value="Addiziona">
+    </form></span>
+    <span><h3>Verifica Se il risultato tra ($op2= 3.5 + $op3 = '10';) è float (true o false(boolen))</h3>
+        <form method="post" action="verifica_risultato_float.php">
+            <input class="const" type="submit"   value="Verifica.">
+    </form></span>
+    <span><h3>Verifica Se il risultato tra ($op1= 3 + $op3 = '10';) è intero (true o false(boolen))</h3>
+        <form method="post" action="verifica_risultato_int.php">
+            <input class="const" type="submit"   value="Verifica">
+    </form></span>
+    <span><h3>cast da una stringa a un numero intero</h3>
+        <form method="post" action="cast_da_string_a_int.php">
+            <input class="const" type="submit"   value="cambia">
+    </form></span>
+    <span><h3>cast da una stringa a un float</h3>
+        <form method="post" action="cast_da_string_a_float.php">
+            <input class="const" type="submit"   value="cambia">
+    </form></span>
+    <span><h3>Valore assoluto di ($op1 = -3;)</h3>
+        <form method="post" action="valore_assoluto_di_un_numero.php">
+            <input class="const" type="submit"   value="Esegui Valore assoluto">
+    </form></span>
+    <span><h3>Radice Quadrata con sqrt() di 25</h3>
+        <form method="post" action="radice_quadrata.php">
+            <input class="const" type="submit"   value="Esegui Radice quadrata">
+    </form></span>
+    <span><h3>prendere il numero più alto di un gruppo di numeri</h3>
+        <form method="post" action="valore_assoluto_di_un_numero.php">
+            <input class="const" type="submit"   value="Prendere numero">
+    </form></span>
+    <span><h3>prendere il numero più basso di un gruppo di numeri</h3>
+        <form method="post" action="prendere_il_numero_più_basso.php">
+            <input class="const" type="submit"   value="Prendere numero">
+    </form></span>
+    <span><h3>Arrotondamento per difetto di 0.49</h3>
+        <form method="post" action="arrotondamendo_per_difetto.php">
+            <input class="const" type="submit"   value="Arrotondare">
+    </form></span>
+    <span><h3>Arrotondamento per eccesso di 0.50</h3>
+        <form method="post" action="arrotondamento_per_ecesso.php">
+            <input class="const" type="submit"   value="Arrotondare">
+    </form></span>
+    <span><h3>Mandare a schermo un numero a random da 0 a 10</h3>
+        <form method="post" action="numero_a_random.php">
+            <input class="const" type="submit"   value="Numero a random da 0 a 100">
+    </form></span>
+    <span><h3>Vedere il resto della divisione tra ($op1 = 15 % $op2 = 5;)</h3>
+        <form method="post" action="resto_della_divisione.php">
+            <input class="const" type="submit"   value="Vedere resto">
+    </form></span>
+    <span><h3>Elevare alla potenza un numero ($op = 5;)</h3>
+        <form method="post" action="elevare_alla_potenza_un_numero.php">
+            <input class="const" type="submit"   value="elevare alla potenza">
+    </form></span>
+    <span><h3>Sommare un numero ($op += 5) ad una variabile ($op = 15;)</h3>
+        <p>operatori di assegnazione</p>
+        <ul>
+            <li>+=</li>
+            <li>-=</li>
+            <li>*=</li>
+            <li>/=</li>
+        </ul>
+        <form method="post" action="sommare_un_numero_ad_una_variabile.php">
+            <input class="const" type="submit"   value="somma">
+    </form></span>
+    <span><h3>Incrementere la variabile ($op) di due volte, quindi ($op++)</h3>
+        <p>operatore di Incremento</p>
+        <ul>
+            <li>++</li>
+        </ul>
+        <form method="post" action="Incrementare_un_numero.php">
+            <input class="const" type="submit"   value="Incrementa">
+    </form></span>
+    <span><h3>Decrementare la variabile ($op) di due volte, quindi ($op--)</h3>
+        <p>operatore di decremento</p>
+        <ul>
+            <li>--</li>
+        </ul>
+        <form method="post" action="Incrementare_un_numero.php">
+            <input class="const" type="submit"   value="Decrementa">
+    </form></span>
+</div>
+</body>
+</html>

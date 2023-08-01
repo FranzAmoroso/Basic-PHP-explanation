@@ -1,0 +1,151 @@
+HTML 
+
+(Hyper Text Markup Language) 
+
+CAPITOLO 1 
+
+Introduzione all’HML  
+
+ 
+
+HTML sta per Hyper Text Markup Language 
+
+HTML è il linguaggio di markup standard per la creazione di pagine web 
+
+HTML descrive la struttura di una pagina web 
+
+HTML è costituito da una serie di Elementi  
+
+Gli elementi HTML indicano al browser come visualizzare il contenuto 
+
+Glie elementi etichettano parti di contenuto come “questo è un titolo”, “questo è un paragrafo", "questo è un collegamento”. 
+
+Struttura della pagina HTML 
+
+Esempio 
+
+<!DOCTYPE html> 
+
+<html> 
+<head> 
+<title>Page Title</title> 
+</head> 
+<body> 
+ 
+<h1>My First Heading</h1> 
+<p>My first paragraph.</p> 
+ 
+</body> 
+</html> 
+
+La <!DOCTYPE html>dichiarazione definisce che questo documento è un documento HTML5. 
+
+L' <html>elemento è l'elemento principale di una pagina HTML, Il documento HTML stesso inizia con <html>e termina con </html>.  
+
+L' <head>elemento contiene meta informazioni sulla pagina HTML 
+
+L' <title>elemento specifica un titolo per la pagina HTML (che viene mostrato nella barra del titolo del browser o nella scheda della pagina) 
+
+L' <body>elemento definisce il corpo del documento, ed è un contenitore per tutti i contenuti visibili, come intestazioni, paragrafi, immagini, collegamenti ipertestuali, tabelle, elenchi, ecc. le intestazioni HTML sono definite con i tag <h1> fino a <h6> 
+
+L' <p>elemento definisce un paragrafo
+ 
+
+ 
+
+Elemento Html 
+
+L' elemento HTML è tutto, dal tag iniziale al tag finale: L' elemento HTML è tutto, dal tag iniziale al tag finale: 
+
+< tagname > Il contenuto va qui... < /tagname > 
+
+Start tag 
+
+Element content 
+
+End tag 
+
+<h1> 
+
+My First Heading 
+
+</h1> 
+
+<p> 
+
+My first paragraph. 
+
+</p> 
+
+<br> 
+
+none 
+
+none 
+
+ 
+
+Nota: Alcuni elementi HTML non hanno contenuto (come il <br> elemento). Questi elementi sono chiamati elementi vuoti. Gli elementi vuoti non hanno un tag finale! 
+
+ 
+
+Browser web 
+
+Lo scopo di un browser Web (Chrome, Edge, Firefox, Safari) è leggere i documenti HTML e visualizzarli correttamente. 
+
+Un browser non visualizza i tag HTML, ma li utilizza per determinare come visualizzare il documento: 
+
+Visualizza nel browser 
+
+ 
+
+ 
+
+CAPITOLO 2 
+
+Elementi HTML di base 
+
+ 
+
+<!DOCTYPE> 
+
+La <!DOCTYPE html>dichiarazione definisce che questo documento è un documento HTML5,  
+
+Tutti i documenti HTML devono iniziare con questa dichiarazione.  
+
+Esso rappresenta il tipo di documento e aiuta i browser a visualizzare correttamente le pagine web 
+
+non fa distinzione tra maiuscole e minuscole.  
+
+La dichiarazione si deve apparire solo una volta, nella parte superiore della pagina (prima di qualsiasi tag HTML).  
+
+<!DOCTYPE html> è la dichiarazione per HTML5. 
+
+Intestazioni HTML 
+
+Le intestazioni HTML sono definite con i tag <h1>to <h6>. 
+
+<h1>definisce l'intestazione più importante. <h6>definisce l'intestazione meno importante:  
+
+Esempio 
+
+ 
+
+<h1>Titolo</h1> 
+<h2>SottoTitolo</h2> 
+<h3>Altri Titoli</h3>						<h4>Altri Titoli</h4> 
+<h5>Altri Titoli</h5> 
+<h6>Altri Titoli</h6> 
+
+Paragrafi <p>(paragrafo)</p> 
+
+I paragrafi HTML sono definiti con il <p>tag: 
+
+Esempio 
+
+<p>This is a paragraph.</p> 
+<p>This is another paragraph.</p> 
+
+Nota: scrivendo il testo in piu paragrafi (<p></p>) il testo avra lo spazio in mezzo, 
+
+ 

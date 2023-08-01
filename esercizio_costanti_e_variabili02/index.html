@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabili</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            width: 200px;
+
+        }
+        input{
+            margin: 10px 0;
+        }
+        .cont{
+            display: grid;
+            grid-template-columns: repeat(3,2fr);
+            grid-template-rows: repeat(2,2fr);
+        }
+        h3{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: burlywood;
+            margin-left:30px;
+        }
+        .const{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: rgb(152, 135, 222);
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        span{
+            background-color: beige;
+            border-radius: 50px;
+            margin: 5px;
+            box-shadow: 2px 2px 2px 2px #00000150;
+        }
+        .invia{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 5px;
+            box-shadow:1px 2px 1px 2px #00000150;
+            width: 200px;
+            display: grid;
+            background-color: rgb(152, 135, 222);
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        label{
+            background-color:rgb(72, 255, 0);
+            border: 1px solid white;
+            width: 65px;
+            box-shadow: 2px 2px 2px 2px #00000150 ;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+   <span><h3>Variabile Super Globale</h3>
+    <form method="post" action="variabile.php">
+        <label for="nome">nome</label>
+        <input type="text" id="nome" name="nome" placeholder="inserisci nome">
+        <label for="cognome">cognome</label>
+        <input type="text" id="cognome" name="cognome" placeholder="inserisci cognome">
+        <input class="invia" type="submit" value="vedi Variabile Super GLobale">
+    </form></span>
+
+    <span><h3>Variabile Locale</h3>
+    <form method="post" action="variabileLocale.php">
+        <label for="nome">nome</label>
+        <input type="text" id="nome" name="nome" placeholder="inserisci nome">
+        <label for="cognome">cognome</label>
+        <input type="text" id="cognome" name="cognome" placeholder="inserisci cognome">
+        <input class="invia" type="submit" value="vedi Variabile Locale">
+    </form></span>
+
+    <span><h3>Variabile Globale</h3>
+    <form method="post" action="variabileGlobale.php">
+        <label for="nome">nome</label>
+        <input type="text" id="nome" name="nome" placeholder="inserisci nome">
+        <label for="cognome">cognome</label>
+        <input type="text" id="cognome" name="cognome" placeholder="inserisci cognome">
+        <input class="invia" type="submit" value="vedi Variabile globale">
+    </form></span>
+
+    <span><h3>Costanti</h3>
+    <form method="post" action="costanti.php">
+        <input class="const" type="submit"  value="Vedi Costanti">
+    </form></span>
+
+    <span><h3>Costanti Globali</h3>
+    <form method="post" action="costantiGlobali.php">
+        <input class="const" type="submit"   value="Vedi Costante Globale">
+    </form></span>
+</div>
+</body>
+</html>
